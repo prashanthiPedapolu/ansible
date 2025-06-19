@@ -10,16 +10,16 @@
      msg: hello task2
 - name: hello play2
   hosts: local
-  connection:localhost
+  connection: localhost
   tasks:
-  - name:hello play2
+  - name: hello play2
     ansible.builtin.debug:
      msg: hello play2 task1
 
 - name: play3
-  hosts:local
-  connection:localhost
+  hosts: local
+  connection: localhost
   tasks:
-  - name:play3 task1
+  - name: play3 task1
     ansible.builtin.debug:
      msg: hello play3 task1
