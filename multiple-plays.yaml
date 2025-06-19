@@ -4,17 +4,17 @@
   tasks:
   - name: hello this is play1 
     ansible.builtin.debug:
-     msg: hello play1
+     msg: "hello play1"
   - name: hello task2 and play1
     ansible.builtin.debug:
-     msg: hello task2
+     msg:"hello task2"
 - name: hello play2
   hosts: local
   connection: localhost
   tasks:
   - name: hello play2
     ansible.builtin.debug:
-     msg: hello play2 task1
+     msg: "hello play2 task1"
 
 - name: play3
   hosts: local
@@ -22,4 +22,4 @@
   tasks:
   - name: play3 task1
     ansible.builtin.debug:
-     msg: hello play3 task1
+     msg: "hello play3 task1"
