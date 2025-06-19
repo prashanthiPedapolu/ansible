@@ -7,7 +7,7 @@
      msg: "hello play1"
   - name: hello task2 and play1
     ansible.builtin.debug:
-     msg:"hello task2"
+     msg: "hello task2"
 - name: hello play2
   hosts: local
   connection: localhost
