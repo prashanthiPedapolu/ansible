@@ -1,9 +1,10 @@
 - name: play level variables
   hosts: localhost
   connection:localhost
-  COURSE: devops
-  TRAINER: prashanthi
-  HOUR: 120
+  vars:
+    COURSE: devops
+    TRAINER: prashanthi
+    HOUR: 120
   tasks:
   - name: play level variables
     ansible.builtin.debug:
