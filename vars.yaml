@@ -1,9 +1,9 @@
-- name: reffering variable file
+- name: variables from file
   hosts: local
   connection: localhost
   vars_file:
   - course.yaml
   tasks: 
-  - name: reffering vars
+  - name: print course info
     ansible.builtin.debug:
       msg: "hello {{ COURSE }},duration is {{ HOURS }}, trainer is {{ TRAINER }},{{ GREETINGS }}"
