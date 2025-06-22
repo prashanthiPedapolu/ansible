@@ -1,0 +1,12 @@
+- name: install servers using loop
+  hosts: frontend
+  become: yes
+  tasks:
+  - name: install nginx
+    ansible.bultin.packages:
+      name: "{{ item.name }}"
+      state: "{{ item.state }}"
+      loop:
+      - { name: "nginx", state: "present" }
+      - { name: "mysql", state: "absent" }
+      - { name: "Zip", state: "absent" }
