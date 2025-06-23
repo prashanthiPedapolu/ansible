@@ -1,0 +1,9 @@
+- name: functions with defined vars
+  hosts: local
+  connection: local
+  vars:
+    persons: "prashanthi, ammu, kiran, nani, chintu"
+  tasks:
+  - name: print persons
+    ansible.builtin.debug:
+      msg: "{{ persons | split(",")}}"
