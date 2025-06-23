@@ -1,5 +1,5 @@
 -  name: functions using default name
-   hosts:local
+   hosts: local
    connection: local
    tasks:
    - name: default name
